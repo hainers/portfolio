@@ -1,0 +1,128 @@
+header
+   height: 80vh
+   padding: 10vh 5% 0
+   a
+      h1
+         margin: 0 0 20px
+         letter-spacing: 0.6px
+         font-size: 62px
+   .main-menu
+      padding-left: 0
+      width: 300px
+      margin: 0
+      li
+         display: inline-block
+         max-width: 120px
+         list-style: none
+         padding-bottom: 6px
+      a
+         display: inline-block
+         width: 28%
+         color: #222
+         font-weight: bold
+         font-size: 14px
+         margin: 0 2%
+         text-transform: capitalize
+         border-bottom: 4px solid #222
+         &:first-child
+            margin-left: 0
+         &:last-child
+            margin-right: 0
+   .heading-area
+      position: relative
+      height: 150px
+      max-width: 300px
+      padding-top: 40px
+      margin-top: 50px
+      h3,p
+         position: relative
+         z-index: 10
+      h3
+         font-size: 18px
+         margin-bottom: 0
+      p
+         letter-spacing: 0.3px
+      &:before, &:after
+         content: ""
+         position: absolute
+         display: block
+         top: 30px
+         height: 90px
+         width: 90px
+         float: left
+         border-radius: 50%
+      &:before
+         background-color: rgba(255,60,0,1)
+         right: 0
+      &:after
+         background-color: rgba(0,209,224,0.7)
+         right: 60px
+.default
+   height: 100vh
+.moved
+   height: 80vh
+@media only screen and (min-width: 720px)
+   header
+      .main-menu
+         position: absolute
+         width: 600px
+         bottom: 5%
+         left: 5%
+      .heading-area
+         position: absolute
+         top: 35%
+         width: 330px
+         max-width: none
+         transition: left 0.5s ease-in-out
+   .default
+      .heading-area
+         left: 53%
+   .moved
+      .heading-area
+         left: 5%
+@media only screen and (min-width: 1000px)
+   header
+      h1
+         letter-spacing: 2px
+         font-size: 72px
+      .main-menu
+         margin-top: 65px
+   .default
+      .heading-area
+         left: 67%
+@media only screen and (min-width: 1300px)
+   header
+      .heading-area
+         width: 430px
+         padding-top: 70px
+         h3
+            font-size: 20px
+         p
+            font-size: 16px
+         &:before, &:after
+            width: 160px
+            height: 160px
+         &:after
+            right: 120px
+   .default
+      .heading-area
+         left: 63%
+@media only screen and (min-width: 1500px)
+   header
+      a h1
+         font-size: 72px
+      .heading-area
+         width: 540px
+         padding-top: 100px
+         &:before, &:after
+            width: 210px
+            height: 210px
+         &:after
+            right: 160px
+   .default
+      .heading-area
+         left: 62%
+@media only screen and (min-width: 1700px)
+   .default
+      .heading-area
+         left: 65%

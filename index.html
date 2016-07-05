@@ -1,8 +1,9 @@
 <html ng-app="portfolioApp">
 <head>
    <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
    <base href="/portfolio/">
-
+   <link rel="stylesheet" type="text/css" href="css/style.css">
    <title>Hainer Savimaa personal portfolio</title>
    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.7/angular.min.js"></script>
    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.7/angular-route.min.js"></script>
@@ -16,21 +17,15 @@
 </head>
 <body ng-controller="mainCtrl">
    <header ng-class="parent.addClass" class="block">
-      <h1>Hainer </br>Savimaa</h1>
-      <ul>
-         <li>
-            <a href="work">work</a>
-         </li>
-         <li>
-            <a href="about">about</a>
-         </li>
-         <li>
-            <a href="contact">contact</a>
-         </li>
+      <a href="home"><h1>Hainer </br>Savimaa</h1></a>
+      <ul class="main-menu">
+         <a href="work"><li>work</li></a>
+         <a href="about"><li>about</li></a>
+         <a href="contact"><li>contact</li></a>
       </ul>
       <div class="heading-area">
-         <h3>Front end web developer</h3>
+         <h3>Front-end Web Developer.</h3>
          <p>Currently freelancer</p>
       </div>
    </header>
-   <div class="page {{ pageClass }}" ng-view></div>
+   <div class="{{ pageClass }} main block" ng-view></div>

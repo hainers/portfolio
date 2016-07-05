@@ -1,0 +1,26 @@
+@keyframes appear
+   from
+      transform:translateY(100%)
+   to
+      transform:translateY(0)
+@keyframes disappear
+   from
+      opacity: 1
+   to
+      opacity: 0
+.main
+   h1
+      font-size: 28px
+@media only screen and (min-width: 720px)
+   .main
+      overflow-y: auto
+      height: 100%
+   .ng-enter
+      position: relative
+      z-index: 8888
+      animation: appear 1s ease-in-out
+      animation-delay: 1s
+   .ng-leave
+      position: relative
+      z-index: 9999
+      animation: disappear 1s
