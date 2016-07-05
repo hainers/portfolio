@@ -809,6 +809,44 @@ header .heading-area:after {
   }
 }
 
+.work-list-container h1 {
+  margin-bottom: 60px;
+}
+
+.work-list-container ul li {
+  list-style: none;
+  border-top: 1px solid #d6d6d6;
+  padding: 25px 0 10px;
+}
+
+.work-list-container ul li a {
+  display: block;
+  transition: all 0.4s ease-in-out;
+}
+
+.work-list-container ul li a h1 {
+  font-size: 22px;
+  letter-spacing: 0.1px;
+}
+
+.work-list-container ul li a p {
+  color: #bebebe;
+  font-size: 13px;
+  letter-spacing: 0.1px;
+}
+
+.work-list-container ul li a h1, .work-list-container ul li a p {
+  margin: 3px 0;
+}
+
+.work-list-container ul:hover li a {
+  opacity: 0.1;
+}
+
+.work-list-container ul:hover li:hover a {
+  opacity: 1;
+}
+
 html {
   box-sizing: border-box;
 }
