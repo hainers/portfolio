@@ -1,26 +1,25 @@
-@keyframes appear
-   from
-      transform:translateY(100%)
-   to
-      transform:translateY(0)
-@keyframes disappear
-   from
-      opacity: 1
-   to
-      opacity: 0
 .main
-   h1
-      font-size: 28px
+   .page-title
+      font-size: 26px
+      color: #555
+      letter-spacing: 0.5px
+      font-weight: 400
+.ng-enter
+   position: relative
+   z-index: 9999
+   animation: appearMobile 1s 0s ease-in-out forwards
+   animation-delay: 0s
+.ng-leave
+   position: relative
+   z-index: 8888
+   animation: disappearMobile 0s 0s ease-in forwards
+
 @media only screen and (min-width: 720px)
    .main
       overflow-y: auto
       height: 100%
    .ng-enter
-      position: relative
-      z-index: 8888
       animation: appear 1s 0s ease-in-out forwards
-      animation-delay: 1s
+      animation-delay: 0.8s
    .ng-leave
-      position: relative
-      z-index: 9999
       animation: disappear 1s 0s ease-in forwards

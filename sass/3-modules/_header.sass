@@ -1,24 +1,3 @@
-@keyframes slideInLeft
-   from
-      transform: translateX(-5%)
-      opacity: 0
-   to
-      transform: rotateX(0%)
-      opacity: 1
-@keyframes slideInRight
-   from
-      transform: translateX(5%)
-      opacity: 0
-   to
-      transform: rotateX(0%)
-      opacity: 1
-@keyframes slideInBottom
-   from
-      transform: translateY(100%)
-      opacity: 0
-   to
-      transform: translateY(0%)
-      opacity: 1
 header
    height: 80vh
    padding: 10vh 5% 0
@@ -27,6 +6,10 @@ header
          margin: 0
          letter-spacing: 0.6px
          font-size: 62px
+      h1:first-child
+         animation: slideInRight 1s ease-in
+      h1:last-child
+         animation: slideInLeft 1s ease-in
    .main-menu
       padding-left: 0
       width: 300px
@@ -84,11 +67,6 @@ header
    height: 80vh
 @media only screen and (min-width: 720px)
    header
-      .home
-         h1:first-child
-            animation: slideInRight 1s ease-in
-         h1:last-child
-            animation: slideInLeft 1s ease-in
       .main-menu
          position: absolute
          width: 600px
@@ -102,7 +80,7 @@ header
          top: 35%
          width: 330px
          max-width: none
-         transition: left 0.5s ease-in-out
+         transition: left 0.9s ease-in-out
    .default
       .heading-area
          left: 53%
