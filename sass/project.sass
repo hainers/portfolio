@@ -1,0 +1,57 @@
+@import "1-tools/normalize"
+
+@import "2-basics/links"
+@import "2-basics/selection-colors"
+@import "2-basics/typography"
+@import "2-basics/body-element"
+@import "2-basics/animations"
+
+
+.project-container
+   font-size: 14px
+   .project-header
+      margin: 0 4%
+      .project-header-intro
+         .project-header-title
+            font-size: 28px
+            margin-bottom: 18px
+            animation: fadeIn 1s ease-in
+         .project-header-about
+            letter-spacing: 0.2px
+            opacity: 0
+            animation: fadeIn 1s 0.5s ease-in forwards
+      .project-header-info
+         opacity: 0
+         animation: fadeIn 1.5s 1s ease-in forwards
+         .tag-key, .tag-value
+            letter-spacing: 0.2px
+            line-height: 23px
+         .tag-value
+            font-weight: 600
+         a
+            display: inline-block
+            margin: 25px auto 35px
+            font-weight: 400
+            color: #333
+            letter-spacing: 0.3px
+            border: 2px solid #000
+            padding: 5px 20px
+   .project-illustration
+      background-color: #333
+      height: 100vh
+
+
+@media only screen and (min-width: 720px)
+   .project-container
+      .project-header
+         display: flex
+         justify-content: space-around
+         height: 30vh
+         min-height: 260px
+         .project-header-info, .project-header-intro
+            width: 35%
+            max-width: 500px
+         .project-header-info
+            padding-top: 62px
+      .project-illustration
+         height: 70vh
