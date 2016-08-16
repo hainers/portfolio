@@ -38,13 +38,29 @@
             padding: 5px 20px
    .project-illustration
       background-color: #333
-      height: 30vh
-      display: flex
-      align-items: center
-      justify-content: center
+      height: 50vh
+      overflow: hidden
       .screenshots-container
-         img
-            max-width: 200px
+         height: 90%
+         width: 90%
+         //max-width: 280px
+         margin: 5% auto
+         position: relative
+         .laptop-screen, .phone-screen
+            position: absolute
+            display: block
+         .laptop-screen
+            width: 100%
+            z-index: 10
+            top: 2.5%
+            bottom: 0
+            right: 0
+         .phone-screen
+            height: 70%
+            z-index: 15
+            bottom: 10%
+            left: 2%
+
 
 
 @media only screen and (min-width: 720px)
@@ -61,3 +77,5 @@
             padding-top: 62px
       .project-illustration
          height: 70vh
+         .screenshots-container
+            background: lightblue
