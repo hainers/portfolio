@@ -43,23 +43,25 @@
       .screenshots-container
          height: 90%
          width: 90%
-         //max-width: 280px
          margin: 5% auto
          position: relative
          .laptop-screen, .phone-screen
             position: absolute
             display: block
+            opacity: 0
          .laptop-screen
             width: 100%
             z-index: 10
             top: 2.5%
             bottom: 0
             right: 0
+            animation: fadeIn 1s 1.5s ease-in forwards
          .phone-screen
             height: 70%
             z-index: 15
             bottom: 10%
             left: 2%
+            animation: fadeIn 1s 2s ease-in forwards
 
 
 
@@ -78,4 +80,20 @@
       .project-illustration
          height: 70vh
          .screenshots-container
-            background: lightblue
+            width: 720px
+            margin: 5% auto
+            .laptop-screen
+               height: 80%
+               width: auto
+               left: 50%
+               transform: translateX(-50%)
+            .phone-screen
+               height: 60%
+               left: 5%
+
+@media only screen and (min-height: 900px)
+   .project-container
+      .project-illustration
+         .screenshots-container
+            .phone-screen
+               left: -5%
