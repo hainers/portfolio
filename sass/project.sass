@@ -50,6 +50,7 @@
          width: 90%
          margin: 5% auto
          position: relative
+         text-align: center
          .laptop-screen, .phone-screen
             position: absolute
             display: block
@@ -67,6 +68,14 @@
             bottom: 10%
             left: 2%
             animation: fadeIn 1s 2s ease-in forwards
+         .phone-screens-only
+            margin: 0 auto
+            display: inline-block
+            padding: 2%
+            .double-phone
+               position: static
+               float: left
+               height: 80%
 
 
 
@@ -95,6 +104,7 @@
             .phone-screen
                height: 60%
                left: 5%
+               bottom: 15%
 
 @media only screen and (min-height: 900px)
    .project-container
