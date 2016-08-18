@@ -16,7 +16,7 @@ portfolioApp.config(function($routeProvider, $locationProvider) {
             controller: 'aboutCtrl'
         })
         .when('/contact', {
-            templateUrl: 'page-contact.html',
+            templateUrl: 'index.html',
             controller: 'contactCtrl'
         })
         .otherwise ({ redirectTo: '/' });
