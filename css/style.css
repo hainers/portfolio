@@ -1105,11 +1105,23 @@ header .heading-area:after {
   }
 }
 
+.contact-container {
+  padding: 5%;
+}
+
+.contact-container .page-title {
+  display: none;
+}
+
 .contact-container a {
   color: #000;
   font-weight: 600;
   display: inline-block;
   border-bottom: 2px solid #000;
+}
+
+.contact-container .contact-headline {
+  font-size: 28px;
 }
 
 html {
