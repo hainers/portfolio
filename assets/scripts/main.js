@@ -5,7 +5,7 @@ const HomePage = {
       <h1>Front end developer and UX enthusiast</h1>
       <p>Hello, My name is Hainer Savimaa! I have over 3 years of working experience from an ad agency and a fintech company as a front end developer. I'm also a self-thaught UX designer.</p>
       <div class="button__container">
-        <router-link to="/work" class="btn btn--main">See my work</router-link>
+        <router-link to="/portfolio/work" class="btn btn--main">See my work</router-link>
         <a href="mailto:hainer.savimaa@gmail.com" class="btn btn--secondary">E-mail me</a>
       </div>
     </div>
@@ -126,6 +126,7 @@ const NotFoundPage = {
   template: `
     <div class="page not-found-page">
       <h1>404 - Page not found</h1>
+      <router-link to="/portfolio/" class="btn btn--main">Take me home</router-link>
     </div>
   `
 };
