@@ -125,7 +125,7 @@ const CVPage = {
 const NotFoundPage = {
   template: `
     <div class="page not-found-page">
-      <h1>404</h1>
+      <h1>404 - Page not found</h1>
     </div>
   `
 };
