@@ -1,43 +1,66 @@
-<html ng-app="portfolioApp">
+<!DOCTYPE html>
+<html lang="en">
 <head>
-   <base href="/portfolio/">
-   <meta charset="utf-8">
-   <meta name="viewport" content="width=device-width, initial-scale=1">
-   <meta name="keywords" content="Hainer Savimaa, veebiarendaja, arendaja, developer, portfolio websites, online portfolio, developer portfolio, front end developer, front-end developer portfolio, portfolio, frontend developer, ux, cheap website, budget website">
-   <meta name="description" content="Experienced front end developer & UX-designer online porfolio. Let's work together! Hainer Savimaa">
-   <link rel="stylesheet" type="text/css" href="css/style.css">
-   <title> Hainer Savimaa | Front end Developer & UX designer </title>
-   <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.7/angular.min.js"></script>
-   <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.7/angular-route.min.js"></script>
-   <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.7/angular-animate.min.js"></script>
-   <script src="js/app.js"></script>
-   <script src="js/controllers/mainCtrl.js"></script>
-   <script src="js/controllers/homeCtrl.js"></script>
-   <script src="js/controllers/workCtrl.js"></script>
-   <script src="js/controllers/aboutCtrl.js"></script>
-   <script src="js/controllers/contactCtrl.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Hainer Savimaa portfolio</title>
+  <meta name="description" content="Hainer Savimaa, Front-end Developer &amp; UX designer.">
+  <meta name="keywords" content="HTML5,CSS,SCSS,SASS,PHP,Vue, VueJS, portfolio, responsive, clean, minimalist, Hainer Savimaa, Front-end, frontend">
+  <meta property="og:title" content="Hainer Savimaa portfolio">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://hainersavimaa.github.io/portfolio">
+  <meta property="og:description" content="Front end developer & UX enthusiast.">
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/images/favicon.png">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,500" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/styles/index.css">
 </head>
-<body ng-controller="mainCtrl">
-   <header ng-class="parent.addClass" class="block">
-      <a href="/portfolio/" class="home"><h1>Hainer</h1> <h1>Savimaa</h1></a>
-      <ul class="main-menu">
-         <a href="work"><li>work</li></a>
-         <a href="about"><li>about</li></a>
-         <a href="contact"><li>contact</li></a>
-      </ul>
-      <div class="heading-area">
-         <h3>Front-end Web Developer.</h3>
-         <p>Currently at MediaMenu AS</p>
+<body>
+
+
+  <div id="app">
+    <nav class="nav">
+      <div class="nav__wrapper">
+        <div class="nav__logo">
+          <router-link to="/">
+            <img src="/assets/images/logo.png">
+          </router-link>
+        </div>
+        <ul class="nav__list-container">
+          <li class="nav__list-item"><router-link to="/" class="nav__list-link">Home</router-link></li>
+          <li class="nav__list-item"><router-link to="/work" class="nav__list-link">Work</router-link></li>
+          <li class="nav__list-item"><router-link to="/cv" class="nav__list-link">CV</router-link></li>
+        </ul>
       </div>
-   </header>
-   <div class="{{ pageClass }} main block" ng-view></div>
-   <script>
-        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-        })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+    </nav>
+    <main  class="page-container">
+      <transition name="moveAnimate">
+        <div class="animator" id="animator" v-if="animate"></div>
+      </transition>
+      <transition name="page", mode="out-in">
+        <router-view></router-view>
+      </transition>
+    </main>
+  </div>
+  <script>
+    /* Sample function that returns boolean in case the browser is Internet Explorer*/
+    function isIE() {
+    ua = navigator.userAgent;
+    /* MSIE used to detect old browsers and Trident used to newer ones*/
+    var is_ie = ua.indexOf("MSIE ") > -1 || ua.indexOf("Trident/") > -1;
 
-        ga('create', 'UA-83027919-1', 'auto');
-        ga('send', 'pageview');
+    return is_ie;
+    }
+    /* Create an alert to show if the browser is IE or not */
+    if (isIE()){
+      alert('This webpage uses modern technologies. To use this webpage please update your browser to Chrome, Firefox or Safari.');
+    }
+  </script>
 
-      </script>
+  <!-- External scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/vue@2.6.6/dist/vue.js"></script>
+  <script src="/assets/scripts/vue-router3.0.3.js"></script>
+  <script src="/assets/scripts/main.js"></script>
+  <!-- External scripts end -->
+</body>
+</html>

@@ -1,0 +1,32 @@
+.btn {
+  display: inline-block;
+  margin: 0;
+  padding: 16px 32px;
+  outline: 0;
+  background: #EEE;
+  font-weight: 500;
+  border-radius: 3px;
+  -webkit-appearance: none;
+  text-decoration: none;
+  text-align: center;
+  transition: all .3s;
+}
+
+.btn--main {
+  background-color: rgba($main2, .1);
+  color: $main;
+  &:focus, &:hover {
+    background-color: $main2;
+    color: #FFF;
+  }
+}
+.btn--secondary {
+  padding: 14px 32px;
+  border: 2px solid $main;
+  background-color: transparent;
+  color: $main;
+  &:focus, &:hover {
+    background-color: $main2;
+    color: #FFF;
+  }
+}
