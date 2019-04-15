@@ -89,7 +89,7 @@ const CVPage = {
     <div class="page cv-page">
       <div class="heading heading--split">
         <h1>CV</h1>
-        <a href="#" class="btn btn--main">Download my CV</a>
+        <a href="/portfolio/assets/cv_hainer-savimaa.pdf" target="_blank" class="btn btn--main">Download my CV</a>
       </div>
       <h3>Experience</h3>
       <ul>
