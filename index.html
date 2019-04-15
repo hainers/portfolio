@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Hainer Savimaa portfolio</title>
+  <meta name="description" content="Hainer Savimaa, Front-end Developer &amp; UX designer.">
+  <meta name="keywords" content="HTML5,CSS,SCSS,SASS,PHP,Vue, VueJS, portfolio, responsive, clean, minimalist, Hainer Savimaa, Front-end, frontend">
+  <meta property="og:title" content="Hainer Savimaa portfolio">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://hainersavimaa.github.io/portfolio">
+  <meta property="og:description" content="Front end developer & UX enthusiast.">
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/images/favicon.png">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,500" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/styles/index.css">
+</head>
+<body>
+
+
+  <div id="app">
+    <nav class="nav">
+      <div class="nav__wrapper">
+        <div class="nav__logo">
+          <router-link to="/">
+            <img src="/assets/images/logo.png">
+          </router-link>
+        </div>
+        <ul class="nav__list-container">
+          <li class="nav__list-item"><router-link to="/" class="nav__list-link">Home</router-link></li>
+          <li class="nav__list-item"><router-link to="/work" class="nav__list-link">Work</router-link></li>
+          <li class="nav__list-item"><router-link to="/cv" class="nav__list-link">CV</router-link></li>
+        </ul>
+      </div>
+    </nav>
+    <main  class="page-container">
+      <transition name="moveAnimate">
+        <div class="animator" id="animator" v-if="animate"></div>
+      </transition>
+      <transition name="page", mode="out-in">
+        <router-view></router-view>
+      </transition>
+    </main>
+  </div>
+  <script>
+    /* Sample function that returns boolean in case the browser is Internet Explorer*/
+    function isIE() {
+    ua = navigator.userAgent;
+    /* MSIE used to detect old browsers and Trident used to newer ones*/
+    var is_ie = ua.indexOf("MSIE ") > -1 || ua.indexOf("Trident/") > -1;
+
+    return is_ie;
+    }
+    /* Create an alert to show if the browser is IE or not */
+    if (isIE()){
+      alert('This webpage uses modern technologies. To use this webpage please update your browser to Chrome, Firefox or Safari.');
+    }
+  </script>
+
+  <!-- External scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/vue@2.6.6/dist/vue.js"></script>
+  <script src="/assets/scripts/vue-router3.0.3.js"></script>
+  <script src="/assets/scripts/main.js"></script>
+  <!-- External scripts end -->
+</body>
+</html>

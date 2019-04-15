@@ -1,0 +1,21 @@
+.home-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: calc(100vh - 82px);
+}
+.button__container {
+  display: flex;
+  align-items: flex-start;
+  .btn--secondary {
+    margin-left: 8px;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  .btn--main, .btn--secondary {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+}

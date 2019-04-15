@@ -1,0 +1,79 @@
+$main: rgba(71,59,240,1);
+$main2: rgba(102,101,221,1);
+$main3: #292a2c;
+
+@import "modules/_animations";
+@import "modules/_navigation";
+@import "modules/_buttons";
+@import "modules/_typography";
+
+@import "modules/_homepage";
+
+* {
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+  color: $main3;
+}
+
+body {
+  position: relative;
+  margin: 0;
+  padding-top: 55px;
+  min-height: 100vh;
+  background: #ECEFF1;
+  overflow-x: hidden;
+}
+.page-container {
+  max-width: 1240px;
+  margin: 0 auto;
+}
+.page {
+  padding: 16px;
+}
+.image {
+  max-width: 100%;
+}
+.contact-link {
+  text-decoration: none;
+  > * {
+    vertical-align: middle;
+  }
+}
+
+.work__single {
+  margin: 40px 0;
+}
+
+.heading--split {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.show-bg {
+  display: none;
+}
+.show-sm {
+  display: block;
+}
+
+@media only screen and (min-width: 720px) {
+  body {
+    padding-top: 82px;
+  }
+  .show-bg {
+    display: block;
+  }
+  .show-sm {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .page {
+    padding: 16px 80px;
+  }
+  p {
+    max-width: 820px;
+  }
+}
