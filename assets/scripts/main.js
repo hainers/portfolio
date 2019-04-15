@@ -23,7 +23,7 @@ const WorkPage = {
           <li class="work__single">
             <h4>New design implementation</h4>
             <p>In the fall of 2018 I was made the head FE developer for implementing a new design for Aasa's Finnish site. This design would eventually be the source for an upcoming UI component library development. The main development was made in SCSS with some assistance from JS(jQuery) for the moving parts.</p>
-            <img src="/assets/images/aasa-desktop.jpg" class="image">
+            <img src="/portfolio/assets/images/aasa-desktop.jpg" class="image">
             <p>Fortunately I knew before starting writing the code for this design that most of it will be re-used afterwards in the component library. Therefore all SCSS is made modular and can be imported separately if necessary. The tricky part for this project was (re)naming the classnames of some elements as some components (like the loan form and netbank pages) were coming from an external API.</p>
             <a href="https://www.aasa.fi" target="_blank" class="btn btn--main">Visit website</a>
           </li>
@@ -34,22 +34,22 @@ const WorkPage = {
           </li>
           <li class="work__single">
             <h4>Customer survey form</h4>
-            <img src="/assets/images/customer-desktop.jpg" class="image">
+            <img src="/portfolio/assets/images/customer-desktop.jpg" class="image">
             <p>This form is a way to recieve feedback from the client after their customer service experience. The client will get an e-mail notification link with an unique CS id parameter for identification. The form consits of 4 questions: yes/no, two scales (1-5 and 1-10) and an open text for suggestions. I was the developer and designer for this project. Used tech stack: VueJS and SCSS.</p>
             <a href="https://www-test.aasa.fi/customerSurvey?id=8e81bb9a-462b-454b-a033-f4926ca48d15" target="_blank" class="btn btn--main">Visit website</a>
           </li>
           <li class="work__single">
             <h4>Predefined loan offers</h4>
-            <img src="/assets/images/loantabs-mobile.jpg" class="image show-bg">
-            <img src="/assets/images/mobile/loantabs-mobile.jpg" class="image show-sm">
+            <img src="/portfolio/assets/images/loantabs-mobile.jpg" class="image show-bg">
+            <img src="/portfolio/assets/images/mobile/loantabs-mobile.jpg" class="image show-sm">
             <p>The idea for this task was to make the loan application process more intuitive and comfortable for the client. After choosing the suitable loan amount the component offers 3 different options for the loan period (with monthly payments visible). I was the developer and designer for this task. The tech stack used for this: VueJS and SCSS.</p>
             <a href="https://www.aasa.fi/hae-lainaa" target="_blank" class="btn btn--main">Visit website</a>
           </li>
           <li class="work__single">
             <h4>Chatbot</h4>
             <p>After implementing the new design & library for the Finnish & Swedish sites the next step was updating the loan application process. The idea was to make a chatbot which asks conversational questions from the user in order to fill out required information for the loan application. Unfortunately this project was put on hold after finishing the prototype. </p>
-            <img src="/assets/images/chatbot-mobile.jpg" class="image show-bg">
-            <img src="/assets/images/mobile/chatbot-mobile.jpg" class="image show-sm">
+            <img src="/portfolio/assets/images/chatbot-mobile.jpg" class="image show-bg">
+            <img src="/portfolio/assets/images/mobile/chatbot-mobile.jpg" class="image show-sm">
             <p>I was the lead front end developer for this project. As this was the prototype all questions and paths are predefined and coming from an JSON file. The trickiest part was that during the development a lot of new paths and cases surfaced(e.g. the user accepts this but not that) which made maintaining the code a headache. The tech stack used for this project: VueJS and SCSS.</p>
           </li>
         </ul>
@@ -62,20 +62,20 @@ const WorkPage = {
         <ul class="work">
           <li class="work__single">
             <h4>Mediamenu webpage</h4>
-            <img src="/assets/images/mediamenu-desktop.jpg" class="image">
+            <img src="/portfolio/assets/images/mediamenu-desktop.jpg" class="image">
             <p>I was the developer for this webpage. This is used as a landing page for potential new customers to show previous work, introduction, prices and contact information. Tech stack for this project: SCSS, jQuery, WordPress</p>
             <a href="https://www.mediamenu.ee" target="_blank" class="btn btn--main">Visit website</a>
           </li>
           <li class="work__single">
             <h4>Ingager webpage</h4>
-            <img src="/assets/images/ingager-mobile.jpg" class="image show-bg">
-            <img src="/assets/images/mobile/ingager-mobile.jpg" class="image show-sm">
+            <img src="/portfolio/assets/images/ingager-mobile.jpg" class="image show-bg">
+            <img src="/portfolio/assets/images/mobile/ingager-mobile.jpg" class="image show-sm">
             <p>Ingager is a Stockholm-based Facebook marketing company. As a developer I was responsible for turning a Photoshop design into a site which content could be easily modified by the client. Tech stack for this project: SCSS, jQuery, WordPress</p>
             <a href="https://www.ingager.com" target="_blank" class="btn btn--main">Visit website</a>
           </li>
           <li class="work__single">
             <h4>Interactive ads</h4>
-            <img src="/assets/images/audi-desktop.jpg" class="image">
+            <img src="/portfolio/assets/images/audi-desktop.jpg" class="image">
             <p>This is one of many interactive full-screen ads I developed for an UK-based client. This particular ad has a custom video player styles and a gallery. Teck stack: CSS, GreenSock (or jQuery)</p>
             <a href="http://www.mediamenu.ee/portfolio/full-screen/audi/panels/" target="_blank" class="btn btn--main">Visit website</a>
           </li>
@@ -132,9 +132,9 @@ const NotFoundPage = {
 
 const router = new VueRouter({
   routes: [
-    { path: '/', component: HomePage },
-    { path: '/work', component: WorkPage },
-    { path: '/cv', component: CVPage },
+    { path: '/portfolio/', component: HomePage },
+    { path: '/portfolio/work', component: WorkPage },
+    { path: '/portfolio/cv', component: CVPage },
     { path: '*', component: NotFoundPage },
   ],
   mode: 'history'
