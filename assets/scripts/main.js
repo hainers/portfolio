@@ -51,6 +51,7 @@ const WorkPage = {
             <img src="/portfolio/assets/images/chatbot-mobile.jpg" class="image show-bg">
             <img src="/portfolio/assets/images/mobile/chatbot-mobile.jpg" class="image show-sm">
             <p>I was the lead front end developer for this project. As this was the prototype all questions and paths are predefined and coming from an JSON file. The trickiest part was that during the development a lot of new paths and cases surfaced(e.g. the user accepts this but not that) which made maintaining the code a headache. The tech stack used for this project: VueJS and SCSS.</p>
+            <a href="https://www-test.aasa.fi/joustoluottohakemus&mobile=chucknorris" target="_blank" class="btn btn--main">View prototype</a>
           </li>
         </ul>
       </section>
