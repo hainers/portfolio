@@ -3,7 +3,7 @@ const HomePage = {
   template: `
     <div class="page home-page">
       <h1>Front end developer and UX enthusiast</h1>
-      <p>Hello, My name is Hainer Savimaa! I have over 3 years of working experience from an ad agency and a fintech company as a front end developer. I'm also a self-thaught UX designer.</p>
+      <p>Hello, My name is Hainer Savimaa! I have over 3 years of working experience from agency to Fintech to software company as a front end developer. I'm also passionate about UI & UX design.</p>
       <div class="button__container">
         <router-link to="/portfolio/work" class="btn btn--main">See my work</router-link>
         <a href="mailto:hainer.savimaa@gmail.com" class="btn btn--secondary">E-mail me</a>
