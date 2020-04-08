@@ -15,6 +15,14 @@ const WorkPage = {
   template: `
     <div class="page work-page">
       <section class="work-section">
+      	<h2>Scoro Software OÜ</h2>
+      	<p>Scoro is a software-as-a-service solution for professional and creative services. The all-in-one business management software combines project management with time and team management, sales, billing, and professional services automation.</p>
+      	<p><strong>Tech stack: </strong>Javascript (ES6, Vue, JQuery), PHP</p>
+      	<ul class="work">
+      	  <li class="work__single">
+            <img src="/portfolio/assets/images/scoro.png" class="image">
+          </li>
+		</ul>
         <h2>Aasa Global AS</h2>
         <p>Aasa Global is an international financial technology company established in 2011 which offers credit solutions to consumers and small-to medium sized businesses in Finland, Sweden & Poland. I was working there as a Front end developer for a year and a half. My biggest accomplishments were implementing the new design on Finnish and Swedish sites and developing an UI components library which is used for keeping the visual design and branding consitent on all sites. </p>
         <p><strong>Tech stack: </strong>HTML/SCSS, Javascript(VueJS and jQuery), PHP(Twig), npm/webpack.</p>
@@ -94,6 +102,10 @@ const CVPage = {
       </div>
       <h3>Experience</h3>
       <ul>
+      <li>
+          <p><strong>05.2019 - current: Scoro Software OÜ</strong></p>
+          <p>Front-end software engineer. Development of Scoro software according to provided tasks from product managers.</p>
+        </li>
         <li>
           <p><strong>11.2017 - 05.2019: Aasa Global AS</strong></p>
           <p>Development and design of Aasa Finland & Aasa Sweden webpages and other digital materials.</p>
