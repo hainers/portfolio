@@ -16,8 +16,10 @@ const WorkPage = {
     <div class="page work-page">
       <section class="work-section">
       	<h2>Scoro Software OÜ</h2>
+      	<p><strong>Software engineer (front-end)</strong></p>
       	<p>Scoro is a software-as-a-service solution for professional and creative services. The all-in-one business management software combines project management with time and team management, sales, billing, and professional services automation.</p>
       	<p><strong>Tech stack: </strong>Javascript (ES6, Vue, JQuery), PHP</p>
+      	<p></p>
       	<ul class="work">
       	  <li class="work__single">
             <img src="/portfolio/assets/images/scoro.png" class="image">
